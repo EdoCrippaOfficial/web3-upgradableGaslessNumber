@@ -1,0 +1,32 @@
+{
+  "name": "upgradablegaslesscontract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "upgradeV2:local": "npx hardhat run scripts/upgradeV2.js --network localhost",
+    "deploy:mumbai": "npx hardhat run scripts/deploy.js --network mumbai",
+    "upgradeV2:mumbai": "npx hardhat run scripts/upgradeV2.js --network mumbai",
+    "start-node": "npx hardhat node",
+    "sign": "npx hardhat run scripts/gasless/sign.js  --network mumbai"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.1",
+    "@nomiclabs/hardhat-etherscan": "^3.1.5",
+    "chai": "^4.3.7",
+    "hardhat": "^2.12.6"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.1",
+    "@openzeppelin/contracts-upgradeable": "^4.8.1",
+    "@openzeppelin/hardhat-upgrades": "^1.22.0",
+    "dotenv": "^16.0.3",
+    "eth-sig-util": "^3.0.1",
+    "ethers": "^5.7.2"
+  }
+}

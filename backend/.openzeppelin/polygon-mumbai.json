@@ -1,0 +1,152 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x1a8E837e753C1B0d68F656de78FE166b8d41Bfc4",
+    "txHash": "0x92dced54aece0899dc230c69011036eb3b02efa63d11d174e20bb19bc58939b8"
+  },
+  "proxies": [
+    {
+      "address": "0x180e0496e6ca844D65829260cdaEDaA874D40b6D",
+      "txHash": "0x28fd3629175dcfcbde339354b9f733683bae7bdf6767f8ca1cf5883cb744a426",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "60823a0da639fd3334914ec36ff97241ff7e915f47a4afa4ca064ba9ca4d5c4e": {
+      "address": "0x29e825d2FCb197c89ed166fd5E350dd3051bA407",
+      "txHash": "0x12af409613687e3c75ff32c75e2f4600daab60a61a6550236a6d9d2a946052a8",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC2771ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/metatx/ERC2771ContextUpgradeable.sol:50"
+          },
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "Number",
+            "src": "contracts/Number.sol:14"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "b84325069c89bfa425dd22e6a14925a6522281033dfbd46a5217fad50e10beff": {
+      "address": "0xfd01d86F2b053FE8dcCBd55eAcb8b9eF51c08592",
+      "txHash": "0xbea0ab47a394b1150d2e3cc73e4baa2c3ff62ad6ec6f35abedd5cf1a77394dc6",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC2771ContextUpgradeable",
+            "src": "@openzeppelin/contracts-upgradeable/metatx/ERC2771ContextUpgradeable.sol:50"
+          },
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_uint256",
+            "contract": "Number",
+            "src": "contracts/Number.sol:14"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
