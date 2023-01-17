@@ -1,5 +1,6 @@
 import {
-  ConnectWallet,
+  ChainId,
+  ConnectWallet, ThirdwebProvider,
   useAddress,
   Web3Button,
 } from "@thirdweb-dev/react";
@@ -54,14 +55,15 @@ export default function Home() {
 
             <div className={styles.card} style={{maxWidth: "100%", display: "flex", flexDirection: "column"}}>
               <h2>WARNING: only for version 2!</h2>
-
-              <Web3Button
-                contractAddress={contractAddress}
-                contractAbi={numberV2.abi}
-                action={(contract) => contract.call("increment")}
-              >
-                INCREMENT
-              </Web3Button>
+              <ThirdwebProvider desiredChainId={ChainId.Mumbai}>
+                <Web3Button
+                  contractAddress={contractAddress}
+                  contractAbi={numberV2.abi}
+                  action={(contract) => contract.call("increment")}
+                >
+                  INCREMENT
+                </Web3Button>
+              </ThirdwebProvider>
             </div>
           </>
         }
